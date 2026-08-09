@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{68ea08d8-ec76-460f-be00-758fe8cbc104}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{C60EFED8-C670-4E61-8D2B-AFD25FE21600}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{4974EADA-CF6C-406B-9616-B44D625C2035}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2A72E1E0-A471-4CDA-85C3-07E45B917C59}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="cks_newcolumn" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cks_Newcolumn" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1E9AFB24-3293-4178-B1E4-D1A0BA235FD0}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7bcb05f1-9ced-43f6-bb3f-a5f6132994b0}">
+                        <labels>
+                          <label description="Invoice Number" languagecode="1033" />
+                        </labels>
+                        <control id="cks_invoicenumber" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cks_invoicenumber" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{af04de95-8303-445f-9f56-5a8a6605e88c}">
+                        <labels>
+                          <label description="Invoice Date" languagecode="1033" />
+                        </labels>
+                        <control id="cks_invoicedate" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="cks_invoicedate" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3c8e3602-b610-4538-bb01-2aac458438fa}">
+                        <labels>
+                          <label description="Supplier" languagecode="1033" />
+                        </labels>
+                        <control id="cks_supplier" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cks_supplier" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3c53a5b4-cb7e-4b39-8c50-142155b7e4a9}">
+                        <labels>
+                          <label description="Invoice Amount" languagecode="1033" />
+                        </labels>
+                        <control id="cks_invoiceamount" classid="{533b9e00-756b-4312-95a0-dc888637ac78}" datafieldname="cks_invoiceamount" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{021fbe10-14b8-41d8-9844-7c8f83239692}">
+                        <labels>
+                          <label description="Tax Amount" languagecode="1033" />
+                        </labels>
+                        <control id="cks_taxamount" classid="{533b9e00-756b-4312-95a0-dc888637ac78}" datafieldname="cks_taxamount" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{94060d33-b425-4f48-8a51-1071886b78cb}">
+                        <labels>
+                          <label description="Total Amount" languagecode="1033" />
+                        </labels>
+                        <control id="cks_totalamount" classid="{533b9e00-756b-4312-95a0-dc888637ac78}" datafieldname="cks_totalamount" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{64f422c6-11bb-49b2-b214-1c4b5298885d}">
+                        <labels>
+                          <label description="Invoice Status" languagecode="1033" />
+                        </labels>
+                        <control id="cks_invoicestatus" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="cks_invoicestatus" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ca1ccfa8-0230-4fae-ad9b-8120497d65c8}">
+                        <labels>
+                          <label description="Three-Way Match" languagecode="1033" />
+                        </labels>
+                        <control id="cks_threewaymatch" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="cks_threewaymatch" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{97c9bba4-057b-4d8a-88a4-b5e858d72cc5}">
+                        <labels>
+                          <label description="Payment Due Date" languagecode="1033" />
+                        </labels>
+                        <control id="cks_paymentduedate" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="cks_paymentduedate" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9885d77e-f732-4102-a66b-faf78965c813}">
+                        <labels>
+                          <label description="Invoice Notes" languagecode="1033" />
+                        </labels>
+                        <control id="cks_invoicenotes" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cks_invoicenotes" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

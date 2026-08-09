@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{acee2858-48fd-4f6f-983d-8d176148a0cd}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{293BB063-9E95-4DC0-8CD4-DC2B180D928B}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{3783379E-0F24-4F93-8230-474EDB8F7620}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7A81683F-BE4D-4377-8763-AA29B5C53570}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="cks_newcolumn" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cks_Newcolumn" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{80C4E9A1-B877-4CAC-9E5B-DFEA0D3B0E67}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4f6d1c42-6d45-4d14-a6b8-227fdf76162f}">
+                        <labels>
+                          <label description="Request Number" languagecode="1033" />
+                        </labels>
+                        <control id="cks_requestnumber" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cks_requestnumber" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5afab0c5-921d-4e37-91fc-490f18e78871}">
+                        <labels>
+                          <label description="Request Date" languagecode="1033" />
+                        </labels>
+                        <control id="cks_requestdate" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="cks_requestdate" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bb0f0f2b-4eb2-42f4-b86d-d445c79ff71d}">
+                        <labels>
+                          <label description="Requester" languagecode="1033" />
+                        </labels>
+                        <control id="cks_requester" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cks_requester" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7b086555-bdae-4366-a6ae-b4c741264625}">
+                        <labels>
+                          <label description="Department" languagecode="1033" />
+                        </labels>
+                        <control id="cks_department" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cks_department" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{945e1773-3377-4849-b2e2-1ef3681bad79}">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="cks_description" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cks_description" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bd3925ef-6029-4456-8620-3bc583edbde8}">
+                        <labels>
+                          <label description="Amount" languagecode="1033" />
+                        </labels>
+                        <control id="cks_amount" classid="{533b9e00-756b-4312-95a0-dc888637ac78}" datafieldname="cks_amount" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9d293820-d79d-4274-b9b1-b2a1842ba6a9}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="cks_status" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="cks_status" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{28f5e060-f6c7-4bd8-b18d-539652b55719}">
+                        <labels>
+                          <label description="Manager Comments" languagecode="1033" />
+                        </labels>
+                        <control id="cks_managercomments" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cks_managercomments" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8b80fa8d-ef54-488b-b760-77cc4b321ef1}">
+                        <labels>
+                          <label description="Manager" languagecode="1033" />
+                        </labels>
+                        <control id="cks_manager" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cks_manager" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{685c4a8a-478a-4f17-99c4-ac33d5bc10ba}">
+                        <labels>
+                          <label description="Approval Date" languagecode="1033" />
+                        </labels>
+                        <control id="cks_approvaldate" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="cks_approvaldate" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cfa8b13a-964e-4c1f-a9d0-9b50f4b22166}">
+                        <labels>
+                          <label description="Rejection Reason" languagecode="1033" />
+                        </labels>
+                        <control id="cks_rejectionreason" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cks_rejectionreason" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5799abff-ee2b-4979-8109-aad27b783d68}">
+                        <labels>
+                          <label description="Purchase Order Number" languagecode="1033" />
+                        </labels>
+                        <control id="cks_purchaseordernumber" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cks_purchaseordernumber" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0aba0120-e3d7-4554-8077-952628a27350}">
+                        <labels>
+                          <label description="Supplier" languagecode="1033" />
+                        </labels>
+                        <control id="cks_supplier" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cks_supplier" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9057c0ef-f54e-41ef-8492-5f053a950751}">
+                        <labels>
+                          <label description="Quantity" languagecode="1033" />
+                        </labels>
+                        <control id="cks_quantity" classid="{c6d124ca-7eda-4a60-aea9-7fb8d318b68f}" datafieldname="cks_quantity" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{407a7afc-703d-4c45-9e6c-d2089015327a}">
+                        <labels>
+                          <label description="Total Amount" languagecode="1033" />
+                        </labels>
+                        <control id="cks_totalamount" classid="{533b9e00-756b-4312-95a0-dc888637ac78}" datafieldname="cks_totalamount" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

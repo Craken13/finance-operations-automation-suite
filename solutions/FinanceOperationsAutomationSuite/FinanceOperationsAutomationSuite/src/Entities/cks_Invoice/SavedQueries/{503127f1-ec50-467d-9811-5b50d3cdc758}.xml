@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{503127f1-ec50-467d-9811-5b50d3cdc758}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cks_newcolumn" select="1" icon="1" preview="1">
+        <row name="result" id="cks_invoiceid">
+          <cell name="cks_newcolumn" width="300" />
+          <cell name="cks_invoicenumber" width="150" />
+          <cell name="cks_invoicedate" width="150" />
+          <cell name="cks_supplier" width="150" />
+          <cell name="cks_invoiceamount" width="150" />
+          <cell name="cks_taxamount" width="150" />
+          <cell name="cks_totalamount" width="150" />
+          <cell name="cks_invoicestatus" width="150" />
+          <cell name="cks_threewaymatch" width="150" />
+          <cell name="cks_paymentduedate" width="150" />
+          <cell name="cks_invoicenotes" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cks_invoice">
+          <attribute name="cks_invoiceid" />
+          <attribute name="cks_newcolumn" />
+          <attribute name="createdon" />
+          <order attribute="cks_newcolumn" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cks_invoicenumber" />
+          <attribute name="cks_invoicedate" />
+          <attribute name="cks_supplier" />
+          <attribute name="cks_invoiceamount" />
+          <attribute name="cks_taxamount" />
+          <attribute name="cks_totalamount" />
+          <attribute name="cks_invoicestatus" />
+          <attribute name="cks_threewaymatch" />
+          <attribute name="cks_paymentduedate" />
+          <attribute name="cks_invoicenotes" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Invoices" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

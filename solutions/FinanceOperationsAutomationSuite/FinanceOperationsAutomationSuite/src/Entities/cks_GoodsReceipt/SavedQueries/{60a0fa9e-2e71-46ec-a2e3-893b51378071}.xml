@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{60a0fa9e-2e71-46ec-a2e3-893b51378071}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cks_newcolumn" select="1" icon="1" preview="1">
+        <row name="result" id="cks_goodsreceiptid">
+          <cell name="cks_newcolumn" width="300" />
+          <cell name="cks_grnnumber" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cks_goodsreceipt">
+          <attribute name="cks_goodsreceiptid" />
+          <attribute name="cks_newcolumn" />
+          <attribute name="createdon" />
+          <order attribute="cks_newcolumn" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cks_grnnumber" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Goods Receipts" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

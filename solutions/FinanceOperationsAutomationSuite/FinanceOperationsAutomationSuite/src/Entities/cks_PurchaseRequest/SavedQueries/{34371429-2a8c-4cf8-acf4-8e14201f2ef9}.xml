@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{34371429-2a8c-4cf8-acf4-8e14201f2ef9}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cks_newcolumn" select="1" icon="1" preview="1">
+        <row name="result" id="cks_purchaserequestid">
+          <cell name="cks_newcolumn" width="300" />
+          <cell name="cks_requestnumber" width="150" />
+          <cell name="cks_requestdate" width="150" />
+          <cell name="cks_requester" width="150" />
+          <cell name="cks_department" width="150" />
+          <cell name="cks_description" width="150" />
+          <cell name="cks_amount" width="150" />
+          <cell name="cks_status" width="150" />
+          <cell name="cks_managercomments" width="150" />
+          <cell name="cks_manager" width="150" />
+          <cell name="cks_approvaldate" width="150" />
+          <cell name="cks_rejectionreason" width="150" />
+          <cell name="cks_purchaseordernumber" width="150" />
+          <cell name="cks_supplier" width="150" />
+          <cell name="cks_quantity" width="150" />
+          <cell name="cks_totalamount" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cks_purchaserequest">
+          <attribute name="cks_purchaserequestid" />
+          <attribute name="cks_newcolumn" />
+          <attribute name="createdon" />
+          <order attribute="cks_newcolumn" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cks_requestnumber" />
+          <attribute name="cks_requestdate" />
+          <attribute name="cks_requester" />
+          <attribute name="cks_department" />
+          <attribute name="cks_description" />
+          <attribute name="cks_amount" />
+          <attribute name="cks_status" />
+          <attribute name="cks_managercomments" />
+          <attribute name="cks_manager" />
+          <attribute name="cks_approvaldate" />
+          <attribute name="cks_rejectionreason" />
+          <attribute name="cks_purchaseordernumber" />
+          <attribute name="cks_supplier" />
+          <attribute name="cks_quantity" />
+          <attribute name="cks_totalamount" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Purchase Requests" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
