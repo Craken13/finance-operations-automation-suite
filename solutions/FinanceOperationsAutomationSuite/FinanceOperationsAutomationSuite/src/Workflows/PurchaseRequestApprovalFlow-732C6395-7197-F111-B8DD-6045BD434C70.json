@@ -1,0 +1,137 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_approvals": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cks_sharedapprovals_2b0b5"
+        },
+        "api": {
+          "name": "shared_approvals"
+        }
+      },
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cks_sharedcommondataserviceforapps_5cbb8"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "metadata": {
+            "operationMetadataId": "e5d252b2-754c-4567-8b5b-176772e8989f"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 4,
+              "subscriptionRequest/entityname": "cks_purchaserequest",
+              "subscriptionRequest/scope": 4
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Condition": {
+          "actions": {
+            "Start_and_wait_for_an_approval": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "5b94f89f-a42b-4c79-8196-be2cd44819a8"
+              },
+              "type": "OpenApiConnectionWebhook",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_approvals",
+                  "operationId": "StartAndWaitForAnApproval",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_approvals"
+                },
+                "parameters": {
+                  "approvalType": "Basic",
+                  "WebhookApprovalCreationInput/title": "Purchase Request Approval Required",
+                  "WebhookApprovalCreationInput/assignedTo": "nyxdaemon@outlook.com",
+                  "WebhookApprovalCreationInput/details": "A new Purchase Request has been submitted and requires your approval.\n\nPlease review the request details and select Approve or Reject."
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Condition_2": {
+              "actions": {
+                "Update_a_row": {
+                  "runAfter": {},
+                  "metadata": {
+                    "operationMetadataId": "5b9ee95f-755e-4e19-8529-0606cc5f14dd"
+                  },
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connectionName": "shared_commondataserviceforapps",
+                      "operationId": "UpdateOnlyRecord",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                    },
+                    "parameters": {
+                      "entityName": "cks_purchaserequests",
+                      "recordId": "@{triggerOutputs()?['body/cks_purchaserequestid']}767950001"
+                    },
+                    "authentication": "@parameters('$authentication')"
+                  }
+                }
+              },
+              "runAfter": {
+                "Start_and_wait_for_an_approval": [
+                  "Succeeded"
+                ]
+              },
+              "expression": {
+                "equals": [
+                  "@outputs('Start_and_wait_for_an_approval')?['body/outcome']",
+                  "@'Approve'"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "faf9ecc1-fe79-4a76-8cb9-70664aa2b23c"
+              },
+              "type": "If"
+            }
+          },
+          "runAfter": {},
+          "expression": {
+            "equals": [
+              "@triggerBody()?['cks_Status']",
+              767950001
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "d7acf7b5-bf5f-49b8-ab77-63320cb88ff6"
+          },
+          "type": "If"
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

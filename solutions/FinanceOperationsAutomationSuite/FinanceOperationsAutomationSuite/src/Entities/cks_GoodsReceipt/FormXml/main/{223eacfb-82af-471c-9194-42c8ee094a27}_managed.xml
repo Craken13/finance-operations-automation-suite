@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form>
+    <form headerdensity="HighWithControls">
       <tabs>
         <tab verticallayout="true" id="{BB911682-CA7F-4102-B92D-7ED57E96288C}" IsUserDefined="1">
           <labels>
@@ -43,6 +43,70 @@
                         <control id="cks_grnnumber" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cks_grnnumber" />
                       </cell>
                     </row>
+                    <row>
+                      <cell id="{1d06e68c-fe88-4699-8564-79d0fbdfc666}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="cks_purchaseorder" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cks_purchaseorder" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{933173cf-6615-4c5e-9eb5-5af6e0ad4f14}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="cks_receiptdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cks_receiptdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fe9efcc0-7a86-4945-9f3f-e2595a1e0e11}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="cks_receivedby" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cks_receivedby" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bf730973-5783-4fdc-8cbb-cf3f3cb57afa}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="cks_quantityreceived" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cks_quantityreceived" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{085fc8ef-ca4c-4bbe-a753-3efa5e6c781f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="cks_quantityverified" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cks_quantityverified" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6af6a15d-d535-46da-9ae0-293df60827c7}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="cks_condition" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cks_condition" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{55b2bd6d-bfe6-4afe-9056-121772f7de96}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="cks_receivingnotes" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cks_receivingnotes" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0e5f16aa-9704-4dc5-90f5-d993873dd73e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="statecode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+                      </cell>
+                    </row>
                   </rows>
                 </section>
               </sections>
@@ -50,6 +114,51 @@
           </columns>
         </tab>
       </tabs>
+      <header id="{7c399d45-f678-47cf-9938-4a62fd7dad9c}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{fc3bf73e-0485-4f28-950f-f7115372827e}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{146b8245-9508-4360-9b9b-894ccbe400a4}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{6a02066d-b54d-49ed-a27e-ab1c3cb3638a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{d5ec6733-1273-4a2b-ada5-098e8845c43e}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{f35ade31-48ee-4237-b994-fa5b6a5eb001}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{8aab0615-775a-4afb-be81-3451d06c945f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b7f4a801-cd16-464a-8ac7-b3ee28b32ea8}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>

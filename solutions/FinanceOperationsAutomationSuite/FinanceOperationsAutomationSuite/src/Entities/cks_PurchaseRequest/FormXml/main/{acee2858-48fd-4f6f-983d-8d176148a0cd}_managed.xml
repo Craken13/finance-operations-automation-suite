@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form>
+    <form headerdensity="HighWithControls">
       <tabs>
         <tab verticallayout="true" id="{293BB063-9E95-4DC0-8CD4-DC2B180D928B}" IsUserDefined="1">
           <labels>
@@ -116,7 +116,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{cfa8b13a-964e-4c1f-a9d0-9b50f4b22166}">
+                      <cell id="{cfa8b13a-964e-4c1f-a9d0-9b50f4b22166}" visible="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -155,6 +155,30 @@
                         <control id="cks_totalamount" classid="{533b9e00-756b-4312-95a0-dc888637ac78}" datafieldname="cks_totalamount" />
                       </cell>
                     </row>
+                    <row>
+                      <cell locklevel="0" id="{e1303c4e-3fd5-4dc4-b74e-3dc3de46b1eb}" rowspan="4" colspan="1" auto="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <RelationshipName>cks_PurchaseRequest_cks_PurchaseRequest_cks_PurchaseOrder</RelationshipName>
+                            <TargetEntityType>cks_purchaseorder</TargetEntityType>
+                            <ViewId>{39B2D1A0-E3DD-4754-A5E8-379A7B16AA1C}</ViewId>
+                            <ViewIds>{39B2D1A0-E3DD-4754-A5E8-379A7B16AA1C}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
                   </rows>
                 </section>
               </sections>
@@ -162,6 +186,51 @@
           </columns>
         </tab>
       </tabs>
+      <header id="{bd636d24-336e-40c3-9363-7cd821f64bf5}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{f7d73227-4c7d-46ca-a5bb-b4fc546f8927}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{eda0d7c6-b308-4488-8ee8-d567c04f967e}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{7e80308f-4482-46cc-9eca-115aa113ea0c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{3ec254b8-2d08-4ba7-a686-7b9e8f9ece94}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{afa6e114-96c8-444d-9a42-3f586742af48}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{cedb99fb-66e0-45ff-a50f-8eb0511d37f8}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{6658662f-da91-47fc-b70f-2e8d90649541}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>
