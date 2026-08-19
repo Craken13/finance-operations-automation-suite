@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{86651bda-52e4-4e58-96be-f2d69af3ad84}</savedqueryid>
+    <layoutxml>
+      <grid name="cks_departments" jump="cks_newcolumn" select="1" icon="1" preview="0">
+        <row name="cks_department" id="cks_departmentid">
+          <cell name="cks_newcolumn" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cks_department">
+          <attribute name="cks_departmentid" />
+          <attribute name="cks_newcolumn" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Department Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

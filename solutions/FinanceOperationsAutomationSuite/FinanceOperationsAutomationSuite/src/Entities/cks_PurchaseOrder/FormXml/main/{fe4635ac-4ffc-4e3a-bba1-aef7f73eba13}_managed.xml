@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{fe4635ac-4ffc-4e3a-bba1-aef7f73eba13}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{F738E527-CA8B-451C-ACCC-BF3BFA1F4DA6}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{85056173-726B-4351-ABCF-40ACDCD24784}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5DE250B2-C782-413A-833E-38B79FDA9282}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="cks_newcolumn" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cks_Newcolumn" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{98421CE1-3207-4A88-BC10-E3A8EB89B601}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2b687aae-c030-4b37-9356-7d241b534416}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="cks_ponumber" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cks_ponumber" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{f7a516f6-a106-4cc5-bf99-a736e74bab1d}" rowspan="4" colspan="1" auto="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <RelationshipName>cks_PurchaseOrder_cks_PurchaseOrder_cks_GoodsReceipt</RelationshipName>
+                            <TargetEntityType>cks_goodsreceipt</TargetEntityType>
+                            <ViewId>{60A0FA9E-2E71-46EC-A2E3-893B51378071}</ViewId>
+                            <ViewIds>{60A0FA9E-2E71-46EC-A2E3-893B51378071}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{55d21faa-a8ea-49ad-b1ad-e4a043609934}" rowspan="4" colspan="1" auto="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_2" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <RelationshipName>cks_PurchaseOrder_cks_PurchaseOrder_cks_Invoice</RelationshipName>
+                            <TargetEntityType>cks_invoice</TargetEntityType>
+                            <ViewId>{503127F1-EC50-467D-9811-5B50D3CDC758}</ViewId>
+                            <ViewIds>{503127F1-EC50-467D-9811-5B50D3CDC758}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{9d6aadb8-e106-4dbe-a087-7eeabb56f65f}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{039805a0-651d-4857-8a2c-509ccba37c2a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{3576fe83-3a42-4cf3-8b49-1bfcb0574190}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{eace6691-1d81-4009-9ec1-adeb5068c77e}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{a6b8f8fb-595a-4c22-a647-e5a04f3c9e7f}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{6144a93c-a265-4055-9720-63552154e43a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5bd030da-a2c8-4c6e-add1-cbc85f902aed}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{8ac1b393-d883-4043-b493-39480d8fe016}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

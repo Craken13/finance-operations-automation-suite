@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{88d9b5c2-08fa-4f4d-a9c5-b7ff8f94b24d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cks_newcolumn" select="1" icon="1" preview="1">
+        <row name="result" id="cks_supplierid">
+          <cell name="cks_newcolumn" width="300" />
+          <cell name="cks_suppliername" width="150" />
+          <cell name="cks_suppliercode" width="150" />
+          <cell name="cks_contactname" width="150" />
+          <cell name="cks_email" width="150" />
+          <cell name="cks_phone" width="150" />
+          <cell name="cks_address" width="150" />
+          <cell name="cks_paymentterms" width="150" />
+          <cell name="cks_active" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cks_supplier">
+          <attribute name="cks_supplierid" />
+          <attribute name="cks_newcolumn" />
+          <attribute name="createdon" />
+          <order attribute="cks_newcolumn" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cks_suppliername" />
+          <attribute name="cks_suppliercode" />
+          <attribute name="cks_contactname" />
+          <attribute name="cks_email" />
+          <attribute name="cks_phone" />
+          <attribute name="cks_address" />
+          <attribute name="cks_paymentterms" />
+          <attribute name="cks_active" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Suppliers" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
